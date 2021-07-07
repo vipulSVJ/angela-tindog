@@ -1,2 +1,3 @@
 # angela-tindog
-TinDog Project by Angela Yu (London App Brewery)
+TinDog Project by Vipul Varshney
+Guided by Angela Yu (London App Brewery)
