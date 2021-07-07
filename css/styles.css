@@ -1,21 +1,11 @@
 body {
   font-family: "montserrat";
+  text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,h2,h3,h4,h5,h6 {
   font-family: "montserrat";
   font-weight: bolder;
-}
-
-h2 {
-  font-weight: 669;
-  font-size: 2.7rem;
-  line-height: 1.5;
-}
-
-h3 {
-  font-weight: 750;
-  font-size: 1.5rem;
 }
 
 /* Headings */
@@ -26,17 +16,50 @@ h3 {
   font-weight: 700;
 }
 
+.section-heading {
+  font-weight: 669;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.price-heading {
+  font-weight: 669;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* SECTIONS */
+.colored-section {
+  background: #ff4c68;
+  color: #912a2e;
+}
+
+.white-section {
+  background: #fff;
+}
+
 /* TITLE */
 
 #title {
-  background: #ff4c68;
-  color: #912a2e;
-  /* color: #7a1b38; */
-  /* color: #c82f63; */
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 10% 5%;
+}
+
+/* TITLE IMAGE */
+
+#title-img {
+  max-width: 56%;
+  max-height: 190%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
 .container-fluid {
-  padding: 3% 15% 10% 15%;
+  padding: 5% 10%;
 }
 
 /* NAVIGATION BAR */
@@ -54,14 +77,14 @@ h3 {
   padding: 0 7px;
 }
 
-/* DOWNLOAD BUTTONS */
+/* DOWNLOAD AND SIGN-UP BUTTONS */
 
 .down-btn {
   font-size: 15px;
   background: transparent;
   border: solid 1px black;
   cursor: pointer;
-  color: #FFE4E4;
+  color: #ffe4e4;
   border-radius: 5%;
   transition: all 0.6s;
   box-shadow: 10px 10px 35px #f44a67, -10px -10px 35px #f44a67;
@@ -73,25 +96,22 @@ h3 {
   background: linear-gradient(to right, #fb575c, #ef3e47);
 }
 
-/* TITLE IMAGE */
-
-#title-img {
-  max-width: 56%;
-  transform: rotate(25deg);
-  position: absolute;
-  /* z-index: -1; */
-  right: 30%;
+.shade {
+  box-shadow: 10px 10px 35px whitesmoke, -10px -10px 35px gainsboro;
 }
 
 /* FEATURES SECTION */
 
 #features {
-  padding: 7% 10%;
-  text-align: center;
-  background-color: #fff;
   position: relative;
-  /* z-index: 1; */
 }
+
+.features-title {
+  font-weight: 750;
+  font-size: 1.5rem;
+}
+
+/* FEATURES ICONS */
 
 #fi {
   color: #ef8172;
@@ -109,9 +129,13 @@ h3 {
 /* TESTIMONIALS */
 
 #testimonials {
-  text-align: center;
-  color: #912a2e;
   background-color: #ef8172;
+}
+
+.testimonial-text {
+  font-weight: 669;
+  font-size: 2.8rem;
+  line-height: 1.5;
 }
 
 .testic-img {
@@ -125,8 +149,7 @@ h3 {
 #press {
   padding-top: 2%;
   padding-bottom: 0.5%;
-  background: #ef8172;
-  text-align: center;
+  background-color: #ef8172;
 }
 
 #press-logo {
@@ -134,41 +157,26 @@ h3 {
   margin: 0px 20px 50px;
 }
 
-.carousel-item {
-  padding: 7% 10%;
-}
-
 /* pricing section */
 
 #pricing {
   padding: 100px;
-  text-align: center;
 }
 
 .pricing-col {
   padding: 3% 2%;
 }
 
+.plan-title {
+  font-weight: 750;
+  font-size: 1.5rem;
+}
+
 /* CTA */
-
-#cta {
-  background: #ff4c68;
-  padding: 5% 10%;
-  text-align: center;
-}
-
-#cta h3 {
-  font-size: 3.5rem;
-  line-height: 1.5;
-  color: #fff;
-}
 
 /* Footer */
 
 #footer {
-  padding: 2% 10%;
-  text-align: center;
-  background: white;
   z-index: -1;
 }
 
@@ -207,7 +215,8 @@ h3 {
 }
 
 @keyframes anim {
-  0%, 100% {
+  0%,
+  100% {
     width: 100%;
     height: 100%;
   }
